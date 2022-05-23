@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.StationsFragment">
+
+    <LinearLayout
+        android:id="@+id/stationLayout"
+        android:layout_width="416dp"
+        android:layout_height="730dp"
+        android:background="#FFFFFF"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="89dp"
+                android:background="@drawable/rectangle"
+                android:gravity="center"
+                android:text="Stations"
+                android:textAllCaps="true"
+                android:textColor="@color/mucho_darker_grey"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/stationSearch"
+                android:layout_width="350dp"
+                android:layout_height="48dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="70dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/rec_stroke"
+                android:ems="10"
+                android:gravity="center|center_vertical"
+                android:hint="Type the station name or code"
+                android:inputType="textPersonName"
+                android:textAlignment="gravity"
+                android:textColor="@color/darker_grey"
+                android:textColorHint="#C9C9BD"
+                android:textSize="17sp" />
+
+            <ImageView
+                android:id="@+id/searchImgView"
+                android:layout_width="30dp"
+                android:layout_height="32dp"
+                android:layout_marginLeft="38dp"
+                android:layout_marginTop="78dp"
+                android:src="@drawable/ic_baseline_search_24" />
+
+            <TextView
+                android:id="@+id/chooseLineText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="139dp"
+                android:text="Choose the line" />
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginTop="155dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/btsLightView"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/bts_light_logo" />
+
+                    <ImageView
+                        android:id="@+id/btsDarkView"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/bts_dark_logo" />
+
+                    <ImageView
+                        android:id="@+id/mrtBlueView"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/mrt_blue_logo" />
+
+                    <ImageView
+                        android:id="@+id/mrtPurpleView"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/mrt_purple_logo" />
+
+                    <ImageView
+                        android:id="@+id/arlView"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/arl_logo" />
+
+                    <ImageView
+                        android:id="@+id/btsGView"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/btsg_logo" />
+
+                    <ImageView
+                        android:id="@+id/srtetDarkView"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/srtet_logo" />
+
+                    <ImageView
+                        android:id="@+id/srtetLightView"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/srtet_pink_logo" />
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+            <TextView
+                android:id="@+id/lineNameText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="250dp"
+                android:text="Line Name" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="354dp"
+                android:layout_height="446dp"
+                android:layout_below="@+id/lineNameText"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="14dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lineNameText" />
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

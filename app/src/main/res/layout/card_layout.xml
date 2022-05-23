@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardView"
+    android:layout_margin="5dp"
+    app:contentPadding="4dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/engStationName"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@+id/lineNameImg"
+                android:gravity="center_vertical"
+                android:text="  eng_name"
+                android:textColor="@color/mucho_darker_grey"
+                android:textSize="16dp"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:id="@+id/thaiStationName"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="45dp"
+                android:layout_toEndOf="@+id/lineIdImg"
+                android:gravity="center_vertical"
+                android:text="  thai_name"
+                android:textColor="@color/mucho_darker_grey"
+                android:textSize="16dp"></TextView>
+
+            <ImageView
+                android:id="@+id/lineNameImg"
+                android:layout_width="80dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="10dp"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <ImageView
+                android:id="@+id/lineIdImg"
+                android:layout_width="80dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="50dp"
+                tools:srcCompat="@tools:sample/avatars" />
+
+
+        </RelativeLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

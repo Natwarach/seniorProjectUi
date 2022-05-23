@@ -1,0 +1,21 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.SeniorProjectUi" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/candy_pink</item>
+        <item name="colorPrimaryVariant">@color/mucho_darker_grey</item>
+        <item name="colorOnPrimary">@color/mucho_darker_grey</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/candy_yellow</item>
+        <item name="colorSecondaryVariant">@color/candy_yellow</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+    </style>
+
+    <style name="Theme.Transparent" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="android:windowFullscreen">true</item>
+
+    </style>
+</resources>

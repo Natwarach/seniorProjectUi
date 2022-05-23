@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.RouteMapFragment">
+
+    <LinearLayout
+        android:id="@+id/routeMapLayout"
+        android:layout_width="416dp"
+        android:layout_height="730dp"
+        android:background="#FFFFFF"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:id="@+id/startingPoint"
+                android:layout_width="350dp"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="30dp"
+                android:autofillHints=""
+                android:ems="10"
+                android:gravity="center|center_vertical"
+                android:inputType="textPersonName"
+                android:text="@string/starting_point"
+                android:textAlignment="gravity"
+                android:textColor="@color/darker_grey"
+                android:textSize="17sp"
+                android:translationZ="90dp" />
+
+            <TextView
+                android:id="@+id/destination"
+                android:layout_width="350dp"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="100dp"
+                android:layout_marginRight="30dp"
+                android:autofillHints=""
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="textPersonName"
+                android:text="@string/destination"
+                android:textAlignment="center"
+                android:textColor="@color/darker_grey"
+                android:textSize="17sp"
+                android:translationZ="90dp" />
+
+
+            <ImageView
+                android:id="@+id/startImgView"
+                android:layout_width="18dp"
+                android:layout_height="19.2dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="67.25dp"
+                android:src="@drawable/ic_baseline_adjust_24"
+                android:translationZ="90dp" />
+
+
+            <ImageView
+                android:id="@+id/linearImgView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="37dp"
+                android:layout_marginTop="89dp"
+                android:rotation="90"
+                android:src="@drawable/ic_baseline_linear_scale_24"
+                android:translationZ="90dp" />
+
+            <ImageView
+                android:id="@+id/destImgView"
+                android:layout_width="18dp"
+                android:layout_height="19.2dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="116dp"
+                android:src="@drawable/ic_baseline_star_24"
+                android:translationZ="90dp" />
+
+            <ImageView
+                android:id="@+id/pinView"
+                android:layout_width="30dp"
+                android:layout_height="32dp"
+                android:layout_marginLeft="38dp"
+                android:layout_marginTop="58.5dp"
+                android:alpha="0.25"
+                android:src="@drawable/pin_point"
+                android:translationZ="90dp"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/pinView2"
+                android:layout_width="30dp"
+                android:layout_height="32dp"
+                android:layout_marginLeft="38dp"
+                android:layout_marginTop="109.25dp"
+                android:alpha="0.25"
+                android:src="@drawable/pin_point"
+                android:translationZ="90dp"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/searchBoxView"
+                android:layout_width="355dp"
+                android:layout_height="100dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="30dp"
+                android:src="@drawable/rec_stroke" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_alignEnd="@+id/searchBoxView"
+                android:layout_marginStart="70dp"
+                android:layout_marginTop="100.1dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginBottom="150dp"
+                android:alpha="0.4"
+                android:background="@color/darker_grey"></View>
+
+            <ImageView
+                android:id="@+id/mapTest"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="70dp"
+                android:src="@drawable/map_test"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

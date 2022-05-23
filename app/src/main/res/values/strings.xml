@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">seniorProjectUi</string>
+    <string name="title_routemap">RouteMap</string>
+    <string name="title_stations">Stations</string>
+
+    <string name="starting_point">Starting Point</string>
+    <string name="destination">Destination</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="todo">TODO</string>
+</resources>
